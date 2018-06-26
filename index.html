@@ -11,7 +11,8 @@
     <meta name="author" content="Gustavo Pimentel Rinaldi"/>
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/stylesheet.css" type="text/css"/>
   </head>
 <body>
 
@@ -22,10 +23,10 @@
           <h2 class="name">Gustavo Pimentel Rinaldi</h2>
           <h5 class="job">Full-Stack Developer</h5>
           <div class="text-center mt-4">
-            <a class="button" target="_blank" href="https://gustavopimentelrinaldi.github.io/portfolio/">Github portfolio</a>
-            <a class="button" target="_blank" href="github.com/gustavopimentelrinaldi/">Github Profile</a>
-            <a class="button" target="_blank" href="#">Email</a>
-            <a class="button" target="_blank" href="#">Contact</a>
+            <button type="button" class="button" target="_blank" href="https://gustavopimentelrinaldi.github.io/portfolio/">Github portfolio</button>
+            <button type="button" class="button" target="_blank" href="github.com/gustavopimentelrinaldi/">Github Profile</button>
+            <button type="button" class="button" target="_blank" data-toggle="popover" title="Email" data-trigger="focus" data-content="gustavorinaldiiii@gmail.com" data-placement="bottom">Email</button>
+            <button tabindex="0" type="button" class="button" target="_blank" data-toggle="popover" title="Contact" data-trigger="focus" data-content="(61) 9 8655-5525" data-placement="bottom">Contact</button>
           </div>
         </header>
 
@@ -114,5 +115,15 @@
           </div>
     </section>
   </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    });
+  </script>
 </body>
 </html>
